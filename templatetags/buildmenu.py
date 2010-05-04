@@ -1,4 +1,15 @@
 # -*- coding: utf-8 -*-
+"""
+	Tag plugin for Django's template library to use djmenugen functionality from a template.
+	Usage: {% buildmenu "name.of.menu.data.structure" %}
+	Use the following context variables as the equivalent to MenuGenerators attributes:
+		current_url
+		menugen_ul_class
+		menugen_li_class
+		menugen_a_class
+		menugen_cur_item_id
+"""
+
 from djmenugen import *
 
 from django import template
